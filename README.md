@@ -166,6 +166,36 @@ Add a line to check every 30 minutes:
 
 ---
 
+🧼 Optional: Log Rotation
+To prevent log bloat, this project includes support for log rotation using logrotate. An example configuration file is provided:
+logrotate.d.plex_hdhomerun
+
+📦 To enable it:
+
+Copy the config file to your system’s logrotate directory:
+sudo cp logrotate.d.plex_hdhomerun /etc/logrotate.d/plex_hdhomerun
+⚠️ IMPORTANT: Edit the su line to match your username and group:
+The file contains:
+
+su YOUR_USERNAME_HERE YOUR_USERNAME_HERE
+Update this to reflect your actual user account.
+You can find your username by running:
+
+whoami
+For example:
+
+su alex alex
+Ensure the log file exists and is owned by your user:
+sudo touch /var/log/plex_hdhomerun.log
+sudo chown yourusername:yourusername /var/log/plex_hdhomerun.log
+✅ After setup, your logs will:
+
+Rotate daily
+Keep 7 compressed backups
+Prevent uncontrolled log growth
+
+---
+
 ## 📝 License
 
 MIT — use, fork, and improve with attribution.

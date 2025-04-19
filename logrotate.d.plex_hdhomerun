@@ -1,0 +1,9 @@
+/var/log/plex_hdhomerun.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    copytruncate
+    su YOUR_USERNAME_HERE YOUR_USERNAME_HERE
+}
