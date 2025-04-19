@@ -2,6 +2,10 @@
 
 Automatically detect and correct changes to your HDHomeRun tuner's IP address in Plex DVR. Prevents broken tuner configs and loss of DVR/guide data due to DHCP changes.
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/bel52/plex-hdhomerun-ip-sync)
+![GitHub last commit](https://img.shields.io/github/last-commit/bel52/plex-hdhomerun-ip-sync)
+![GitHub](https://img.shields.io/github/license/bel52/plex-hdhomerun-ip-sync)
+
 ---
 
 ## 🧐 Why Use This?
